@@ -1,8 +1,9 @@
+# git
 gitクライアントの使い方の説明．Githubの説明ではない．
 
 むしろ誰か教えてくれよ．
 
-# 簡単な用語集
+## 簡単な用語集
 - repository（リポジトリ，名詞）：ディレクトリみたいなもの．プロジェクトとかと言い換えてもよさそう．
    - Githubはremote repositoryと呼ばれる．cloneした後の自分の手元にあるのがlocal repository．
 - branch（ブランチ，名詞）：派生したrepository．
@@ -14,17 +15,15 @@ gitクライアントの使い方の説明．Githubの説明ではない．
 - commit（コミット，動詞）：branchに変更を与えること．単純に貢献することを意味する場合も．
 - push（プッシュ，動詞）：repositoryをアップロードすること．
 
-# 研究室アカウント以下のrepositoryをダウンロードしたい
-[[https://github.com/IUI-Lab]]直下のrepositoryを自分のデスクトップにcloneしたいとき．
-
-所望のrepositoryにアクセスし，`Clone or download`（緑色のボタン）を押し，表示された文字列をコピー．以下のようにコマンドを叩く．以下の例は`AITalk` repositoryをcloneする．
+## repositoryをダウンロードしたい
+所望のrepositoryにアクセスし，`Clone or download`（緑色のボタン）を押し，表示された文字列をコピー．以下のようにコマンドを叩く．以下の例は研究室の`AITalk` repositoryをcloneする．
 ```
 git clone https://github.com/IUI-Lab/AITalk.git
 ```
 
 この場合，**master branchがcloneされる**．特定のbranchをcloneする場合はcloneに引数を追加する．詳細はGoogleに聞くこと．
 
-# repositoryに変更を与えたい
+## repositoryに変更を与えたい
 repositoryにcommitし，Githubにpushしたいとき．
 
 cloneしたrepositoryのディレクトリ上で以下のコマンドを叩く．
@@ -40,7 +39,7 @@ git push
 - commit: コミットを作成する．
 - push: コミットをremote repositoryにpush，すなわち変更を登録する．
 
-## pushする前にcommitを修正したいとき
+### pushする前にcommitを修正したいとき
 要らないファイルをstagingしてしまった！pushする前にstaging領域から除外したい！そんなとき．
 
 ```
@@ -52,7 +51,7 @@ git --amend commit -m "いろいろ追加" （<- コメントは変えてもよ�
 git push
 ```
 
-# その他
+## その他
 - local repositoryを作ったあとに，そのrepositoryを基準としてGithub上のrepositoryを作成したい
    - 知るか．先にGithub上でrepository作っとけ．
    - Github上で空のrepository作ってそれcloneして，生成される`.git`ディレクトリをlocal repository内にコピーすればうまくいく．
