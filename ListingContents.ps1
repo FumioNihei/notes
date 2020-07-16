@@ -1,14 +1,21 @@
 
-$contents = Get-ChildItem -Path .\contents | Foreach-Object { $_.Name } | ForEach-Object{ "https://fumionihei.github.io/notes/#contents/$_" }
+$contents = Get-ChildItem -Path .\contents | Foreach-Object { $_.Name }
 
-$lines = @(
+$readme = @(
     "# notes"
     "Memorandum, or using when it's too much trouble to explain."
     ""
     "# contents"
 )
 
-# https://fumionihei.github.io/notes/#contents/powershell.md
+$readme | Out-File -FilePath README.md
+$contents | ForEach-Object{ "https://fumionihei.github.io/notes/#contents/$_" } | Out-File -FilePath README.md -Append
 
-$lines | Out-File -FilePath README.md
-$contents | Out-File -FilePath README.md -Append
+
+$index = @(
+    "# contents"
+)
+
+$index | Out-File -FilePath index.md
+$contents | ForEach-Object{ "[$( $_.Replace(`".md`",`"`") )](https://fumionihei.github.io/notes/#contents/$_)" } | Out-File -FilePath index.md -Append
+
