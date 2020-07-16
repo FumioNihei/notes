@@ -4,6 +4,8 @@ $contents = Get-ChildItem -Path .\contents | Foreach-Object { $_.Name } | ForEac
 $lines = @(
     "# notes"
     "Memorandum, or using when it's too much trouble to explain."
+    ""
+    "# contents"
 )
 
 # https://fumionihei.github.io/notes/#contents/powershell.md
