@@ -1,8 +1,9 @@
+# Windowsからssh
 方法は二つ．前者のほうがはるかに楽．
 - `powershell`から`ssh`
 - `WSL`から`ssh`
 
-# powershellからssh
+## powershellからssh
 2018年のアップデートで，`powershell`から`ssh`が呼べるようになっています．あなたのwindowsが最新版にupdateされているならすぐにsshできます．
 
 powershellを呼び出した後（see -> [powershell](powershell.md)），以下のコマンドを打ってください．
@@ -13,7 +14,7 @@ ssh <USER_NAME>@192.168.11.xxx
 
 （必要なら）sshの鍵は`C:\Users\<USER_NAME>\.ssh`に配置してください．
 
-# WSLからssh
+## WSLからssh
 ストアアプリからUbuntuを検索してダウンロードする．Linuxシェルを立ち上げたあと，以下のコマンド．
 
 ```
@@ -22,7 +23,7 @@ ssh <USER_NAME>@192.168.11.xxx
 
 ちなみに，winのexplorerに`\\wsl$`と打つと，ファイルシステムにアクセスできます．
 
-# おまけ：sshでファイル送る，受け取る
+## おまけ：sshでファイル送る，受け取る
 
 `scp`コマンドを使う．
 
