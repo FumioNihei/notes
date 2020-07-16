@@ -5,7 +5,7 @@
 # powershellからssh
 2018年のアップデートで，`powershell`から`ssh`が呼べるようになっています．あなたのwindowsが最新版にupdateされているならすぐにsshできます．
 
-powershellを呼び出した後（see -> [powershell](powreshell.md)），以下のコマンドを打ってください．
+powershellを呼び出した後（see -> [powershell](powershell.md)），以下のコマンドを打ってください．
 
 ```
 ssh <USER_NAME>@192.168.11.xxx
