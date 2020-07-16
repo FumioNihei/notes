@@ -1,4 +1,6 @@
-# powershell???
+# powershell
+## powershellとは???
+
 `powershell`はwindowsにおける標準のシェルです．
 
 以前のwindowsのシェルはコマンドプロンプト（`cmd`）でしたが，どうしても必要な場合以外は使う必要はありません．
