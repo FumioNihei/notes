@@ -6,6 +6,7 @@ $readme = @(
     "Memorandum, or using when it's too much trouble to explain."
     ""
     "# contents"
+    "https://fumionihei.github.io/notes"
 )
 
 $readme | Out-File -FilePath README.md
