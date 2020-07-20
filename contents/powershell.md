@@ -64,9 +64,15 @@ PS C:\Users>
 
 ```
 Write-Host "Hello World!!!"
+
 $x = 10
 $y = 2.3
 Write-Host "x + y = $( $x + $y )"
+
+for ($i = 0; $i -lt 5; $i++) {
+    Write-Host "$i th roop, now -> $( Get-Date -Format "yyyy/MM/dd HH:mm:ss.fff" )"
+    Start-Sleep 1
+}
 ```
 
 作成したスクリプトを実行する方法は次のセクションで説明します．
