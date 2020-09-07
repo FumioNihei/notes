@@ -1,0 +1,7 @@
+system.drawing.common
+	Bitmap‚Æ‚©Image‚Æ‚©Žg‚¦‚é
+system.windows.extensions
+	ImageCOnveterŽg‚¦‚é
+
+
+‚»‚à‚»‚à—¼•û‚¢‚ç‚ñ‚©‚à‚Ë
